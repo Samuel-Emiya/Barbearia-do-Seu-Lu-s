@@ -9,6 +9,10 @@ h1 {
     font-size: xx-large;
     font-style: italic;
     text-decoration: overline;
+    letter-spacing: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 table {
