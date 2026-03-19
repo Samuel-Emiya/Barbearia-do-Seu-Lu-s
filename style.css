@@ -4,31 +4,20 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: xx-large;
-    font-style: italic;
-    text-decoration: overline;
-    letter-spacing: 20px;
+header {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    gap: 38rem;
+    font-size: 13px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 6.375rem;
+    margin-right: 6.375rem;
+    box-shadow: 0px 1px gray;
 }
 
-table {
-    border-collapse: collapse;
+.header {
     display: flex;
-    justify-content: center;
-}
-th {
-    text-align: center;
-}
-
-th, td {
-    border: lightgray solid 1px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.txtalign td {
-    text-align: start;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
 }
