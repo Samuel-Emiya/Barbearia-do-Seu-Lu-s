@@ -5,19 +5,42 @@
 }
 
 header {
+    box-shadow: 0px 1px gray;
+}
+
+.logo {
     display: flex;
-    gap: 38rem;
+    height: 5rem;
+    justify-content: end;
+    padding-right: 0;
+    margin-left: 6.375rem;
+}
+
+.botao {
+    
+}
+
+.pt {
+    font-size: medium;
+}
+
+.horizontal {
+    margin-right: 26.867rem;
+}
+
+.theader {
+    display: flex;
+    flex-direction: horizontal;
     font-size: 13px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 6.375rem;
     margin-right: 6.375rem;
-    box-shadow: 0px 1px gray;
+    align-items: center;
 }
 
 .header {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     font-size: 18px;
 }
