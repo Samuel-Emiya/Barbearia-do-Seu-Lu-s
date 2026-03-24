@@ -17,7 +17,14 @@ header {
 }
 
 .botao {
-    
+    background-color: black;
+    border: 10px black solid;
+    border-radius: 10px;
+}
+
+.botao a {
+    color: white;
+    text-decoration: none;
 }
 
 .pt {
@@ -25,7 +32,7 @@ header {
 }
 
 .horizontal {
-    margin-right: 26.867rem;
+    margin-right: 26.45rem;
 }
 
 .theader {
@@ -43,4 +50,32 @@ header {
     gap: 40px;
     align-items: center;
     font-size: 18px;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.375rem;
+    gap: 0.5rem;
+}
+
+.corpo h1 {
+    font-size: 60px;
+    letter-spacing: none;
+}
+
+.corpo .title1 {
+    background-color: black;
+    color: white;
+    width: 10%;
+    border: 10px solid black;
+    border-radius: 2rem;
+    margin-bottom: 0;
+    margin-top: 1.6rem;
+}
+
+.corpo .corpo2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
 }
