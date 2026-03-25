@@ -27,6 +27,14 @@ header {
     text-decoration: none;
 }
 
+.header .botao a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 10px black solid;
+    border-radius: 10px;
+}
+
 .botoes .botao2 {
     background-color: white;
     border: 1px black solid;
@@ -70,6 +78,17 @@ header {
     font-size: 18px;
 }
 
+.header button {
+    background-color: white;
+    border: none;
+}
+
+.header button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
 .cp {
     display: flex;
     flex-direction: horizontal;
@@ -95,7 +114,7 @@ header {
     letter-spacing: none;
     color: #0A0A0A;
     font-family: 'Open-Sans', sans-serif;
-    text-shadow: 0px 5px 3px lightgray;
+    text-shadow: -1px 5px 3px lightgray;
 }
 
 .corpo .title1 {
