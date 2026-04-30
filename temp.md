@@ -1,0 +1,80 @@
+    <div class="cp">
+        <div class="corpo">
+            <button class="title1">20 Anos de Tradição</button>
+            <h1>Estilo e <br> Tradição em <br> Cada Corte</h1>
+            <div class="corpo2">
+                <p>Seu luís transforma seu visual com 20 anos de <br> experiência e dedicação. 
+                Agende seu horário <br> online e facilite sua rotina
+                </p>
+                <div class="botoes">
+                    <button class="botao"><a href="">Agendar Horário</a></button>
+                    <button class="botao2" id="botao2"><a href="">Ver Portifólio</a></button>
+                </div>
+            </div>
+        </div>
+        <img src="./imagens/Barbearia-frente-2.avif" alt="Frente-da-Barbearia">       
+    </div>
+
+    <div class="sobre">
+        <div class="gap2">
+            <H1>Sobre Seu Luís</H1>
+            <p>Mais de duas décadas dedicadas à arte da barbearia, combinando <br> 
+            técnicas tradicionais com as tendências mais modernas
+            </p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="icone"><img src="./imagens/medal.png" alt="Prestígio"></div>
+                <h2>20 anos</h2>
+                <p>De experiência e dedicação ao <br> ofiício da barbearia</p>
+            </div>
+
+            <div class="card">
+                <div class="icone"><img src="./imagens/people.avif" alt="Reconhecido"></div>
+                <h2>1000+</h2>
+                <p>Clientes satisfeitos ao longo dos <br> anos</p>
+            </div>
+
+            <div class="card">
+                <div class="icone"><img src="./imagens/pin.avif" alt="Localização"></div>
+                <h2>São Paulo</h2>
+                <p>Rua Ipuaçu 374, Jardim Amália</p>
+            </div>
+        </div>
+        <p class="p2">
+            A Barbearia Seu Luís nasceu da paixão pelo ofício e do compromisso com a excelência. <br>
+            Com 20 anos de história, atendemos clientes que buscam não apenas um <br> corte de cabelo,
+            mas uma experiência completa de cuidado pessoal e bem-estar. Nosso <br> objetivo agora é
+            facilitar ainda mais o acesso aos nossos serviços através do <br> agendamento online.
+        </p>
+    </div>
+
+    <div class="servicos">
+        <h1>Nossos Serviços</h1>
+        <p>Oferecemos uma gama completa de serviços para cuidar do seu visual</p>
+        <div class="cards">
+            <div class="card">
+                <div class="icone"><img src="./imagens/medal.png" alt="Prestígio"></div>
+                <h2>20 anos</h2>
+                <p>De experiência e dedicação ao <br> ofiício da barbearia</p>
+            </div>
+
+            <div class="card">
+                <div class="icone"><img src="./imagens/people.avif" alt="Reconhecido"></div>
+                <h2>1000+</h2>
+                <p>Clientes satisfeitos ao longo dos <br> anos</p>
+            </div>
+
+            <div class="card">
+                <div class="icone"><img src="./imagens/pin.avif" alt="Localização"></div>
+                <h2>São Paulo</h2>
+                <p>Rua Ipuaçu 374, Jardim Amália</p>
+            </div>
+
+            <div class="card">
+                <div class="icone"><img src="./imagens/pin.avif" alt="Localização"></div>
+                <h2>São Paulo</h2>
+                <p>Rua Ipuaçu 374, Jardim Amália</p>
+            </div>
+        </div>
+    </div>
