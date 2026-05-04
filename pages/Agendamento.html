@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="./agendamento.js"></script>
 
     <style>
         :root {
@@ -15,6 +16,11 @@
             --black: #000000;
             --lightest-gray: #F9FAFB;
             --dark-gray: #4A5565;
+            --light-gray: #D3D3D3;
+        }
+
+        body {
+            background-image: url(../imagens/vintage-frame-salon-tools-wooden-table-jobs-career-concept_53876-143259.avif);
         }
 
         .logo {
@@ -26,50 +32,44 @@
         }
 
         nav {
+            background-color: var(--white);
             border-bottom: 1px solid black;
         }
         
-        .t1 {
-            font-size: 60px;
-            font-family: 'Open Sans';
-            font-weight: 700;
-            text-shadow: -1px 5px 3px lightgray;
-        }
+       form {
+        margin-top: 3rem;
+        margin-left: 29.5%;
+        border: 1px solid var(--dark-gray);
+        width: 40rem;
+        height: 30rem;
+        background-color: var(--white);
+       }
 
-        .p1 {
-            font-size: 14px;
-            color: var(--white);
-            background-color: var(--black);
-            border: 0.5rem solid var(--black);
-            border-radius: 2rem;
-            width: 10rem;
-            text-align: center;
-        }
+       .p1 {
+        margin-top: 1rem;
+       }
 
-        .p2 {
-            font-size: 20px;
-            color: var(--dark-gray);
-        }
+       .p3 {
+        margin-bottom: 1rem;
+        font-style: italic;
+        color: var(--light-gray);
+        font-weight: 600;
+       }
 
-        .a1 {
-            text-decoration: none;
-            font-size: 18px;
-            color: var(--white);
-            background-color: var(--black);
-            border: 1rem solid var(--black);
-            border-radius: 0.75rem;
-        }
+       .input {
+        width: 32rem;
+       }
 
-        .a2 {
-            text-decoration: none;
-            font-size: 18px;
-            color: var(--black);
-            border: 1rem solid var(--white);
-        }
+       .input2 {
+        width: 5rem;
+        padding-left: 14px;
+        margin-bottom: 1rem;
+       }
 
-        .i1 {
-            margin-left: 16rem;
-        }
+       .input3 {
+        width: 5rem;
+       }
+
     </style>
 </head>
 <body>
@@ -105,7 +105,23 @@
         </div>
     </nav>
 
-    <form action=""></form>
+    <form name="agendaMento" onsubmit="validarFormulario(event)" class="d-flex align-items-center justify-content center flex-column row-gap-1">
+        <p class="p1">Digite seu nome completo</p>
+        <input type="text" name="nome" placeholder="Teresa de Maria" class="input">
+        <p>Digite seu telefone</p>
+        <input type="tel" name="telefone" placeholder="(99) 99999-9999" class="input">
+        <p>Serviço</p>
+        <input type="text" name="serviço" placeholder="Pintar o Cabelo" class="input">
+        <p>Data</p>
+        <input type="date" name="data" placeholder="99/99/9999" class="input">
+        <p>Horário Preferido do cliente</p>
+        <div class="d-flex flex-row column-gap-3 align-items-center">            
+            <input type="time" name="hora" class="input2">
+            <p class="p3">*Horário de funcionamento: 9-12, 13-18</p>
+        </div>
+
+        <input type="submit" value="Enviar" class="input3">
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
