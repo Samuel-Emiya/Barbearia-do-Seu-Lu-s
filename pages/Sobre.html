@@ -29,6 +29,13 @@
             --cafe-au-lait: #A57A5A;
         }
 
+        body {
+            background-image: url(../imagens/sobre.png);
+            background-repeat: no-repeat;
+            background-size: cover;      
+            background-position: center; 
+        }
+
         .logo {
             /*display: flex;
             justify-content: end;*/
@@ -50,13 +57,29 @@
             font-size: 1.3rem;
             font-family: 'Rye';
         }
+
+        .d1 {
+            margin-top: 2rem;
+        }
+
+        .icone img{
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .c1 {
+            background-color: var(--fadded-orange);
+            padding: 1rem;
+            border: 1px solid rgba(1, 1, 1, 0.03);
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
 
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
                 <img src="../imagens/imagem_convertida-removebg-preview.png" alt="logo" width="80" class="me-2">
                 <div>
                     <strong class="ff">Barbearia do Seu Luís</strong><br>
@@ -73,7 +96,7 @@
                 <li class="nav-item fs-5"><a class="nav-link" href="../index.html">Início</a></li>
                 <li class="nav-item fs-5"><a class="nav-link" href="#">Sobre</a></li>
                 <li class="nav-item fs-5"><a class="nav-link" href="./Serviços.html">Serviços</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./Portifólio.html">Portfólio</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./Portifólio.html">Portifólio</a></li>
                 <li class="nav-item fs-5"><a class="nav-link" href="./Depoimentos.html">Depoimentos</a></li>
 
                 <li class="nav-item ms-3">
@@ -85,28 +108,28 @@
         </div>
     </nav>
 
-    <div class="sobre">
-        <div class="gap2">
+    <div class="d-flex flex-column align-items-center row-gap-4 d1">
+        <div class="d-flex flex-column">
             <H1>Sobre Seu Luís</H1>
             <p>Mais de duas décadas dedicadas à arte da barbearia, combinando <br> 
             técnicas tradicionais com as tendências mais modernas
             </p>
         </div>
-        <div class="cards">
-            <div class="card">
-                <div class="icone"><img src="./imagens/medal.png" alt="Prestígio"></div>
+        <div class="d-flex flex-row column-gap-5">
+            <div class="d-flex flex-column align-items-center text-center c1">
+                <div class="icone"><img src="../imagens/medal.png" alt="Prestígio"></div>
                 <h2>20 anos</h2>
                 <p>De experiência e dedicação ao <br> ofiício da barbearia</p>
             </div>
 
-            <div class="card">
-                <div class="icone"><img src="./imagens/people.avif" alt="Reconhecido"></div>
+            <div class="d-flex flex-column align-items-center text-center c1">
+                <div class="icone"><img src="../imagens/people.avif" alt="Reconhecido"></div>
                 <h2>1000+</h2>
                 <p>Clientes satisfeitos ao longo dos <br> anos</p>
             </div>
 
-            <div class="card">
-                <div class="icone"><img src="./imagens/pin.avif" alt="Localização"></div>
+            <div class="d-flex flex-column align-items-center text-center c1">
+                <div class="icone"><img src="../imagens/pin.avif" alt="Localização"></div>
                 <h2>São Paulo</h2>
                 <p>Rua Ipuaçu 374, Jardim Amália</p>
             </div>
