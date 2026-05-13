@@ -37,6 +37,10 @@
             margin-left: 6.375rem;
         }
 
+        body {
+            background-image: linear-gradient(to bottom, var(--rust-brown), var(--cofee-brown));
+        }
+
         nav {
             border-bottom: 1px solid black;
             background-color: var(--light-french-beige);
@@ -71,6 +75,25 @@
         .d6 a {
             text-decoration: none;
             color: var(--fadded-orange);
+        }
+
+        .img42  img{
+            width: 20rem;
+        }
+
+        .dd1 {
+            margin-top: 4rem;
+            gap: 6rem;
+            margin-bottom: 6rem;
+        }
+
+        .dd2 {
+            margin-top: 4rem;
+        }
+
+        .dd1 a {
+            text-decoration: none;
+            color: var(--burnt-orange);
         }
     </style>
 </head>
@@ -107,25 +130,143 @@
         </div>
     </nav>
 
-    <div class="d-flex flex-column">
-        <div id="carouselExample" class="carousel slide">
+    <div class="d-flex flex-column align-items-center dd2">
+        <div id="carossel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel inner">
-                <div class="carousel-item active">
-                    <img src="../imagens/fade2.jpg" alt="">
+                <div class="carousel-item active img42">
+                    <a href="#F01"><img src="../imagens/fade2.jpg" alt=""></a>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item img42">
                     <img src="../imagens/undercut2.jpg" alt="">
                 </div>
+                <div class="carousel-item img42">
+                    <img src="../imagens/militar2.jpg" alt="">
+                </div>
+                <div class="carousel-item img42">
+                    <img src="../imagens/americano2.jpeg" alt="">
+                </div>
+                <div class="carousel-item img42">
+                    <img src="../imagens/moicano2.jpeg" alt="">
+                </div>
+                <div class="carousel-item img42">
+                    <img src="../imagens/vstyle2.jpeg" alt="">
+                </div>
+                <div class="carousel-item img42">
+                    <img src="../imagens/taper2.jpg" alt="">
+                </div>
+                <div class="carousel-item img42">
+                    <img src="../imagens/caeser2.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carossel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
-        <div >
-            <h1>Fade (Degradê)</h1>
-            <img src="../imagens/fade.jpg" alt="">
-            <p>O fade, também conhecido como degradê, é um dos estilos de corte mais procurados atualmente. Sua principal característica é a mudança 
-                suave no comprimento do cabelo, começando bem baixo nas laterais e aumentando gradualmente em direção ao topo. Há diferentes versões 
-                desse corte, como o low fade, que possui um acabamento mais discreto, e o high fade, que cria um visual mais marcante e destacado.
-            </p>
+        <div class="d-flex flex-row dd1">
+            <div>
+                <a href="#CC"><h1>Cortes de Cabelo</h1></a>
+            </div>
+            <div>
+                <a href="#CB"><h1>Corte de Barbas</h1></a>
+            </div>
+        </div>
+
+        <div id="CC" class="d-flex flex-column d11 align-items-center">
+            <div id="F01">
+                <h3>Fade (Degradê)</h3>
+                <img src="../imagens/fade.jpg" alt="" class="img1">
+                <p3>
+                    O fade, também conhecido como degradê, é um dos estilos de corte mais procurados atualmente. Sua principal característica é a mudança 
+                    suave no comprimento do cabelo, começando bem baixo nas laterais e aumentando gradualmente em direção ao topo. Há diferentes versões 
+                    desse corte, como o low fade, que possui um acabamento mais discreto, e o high fade, que cria um visual mais marcante e destacado.
+                </p3
+            </div>
+            <div>
+                <h3>Undercut</h3>
+                <img src="../imagens/undercut.jpeg" alt="" class="img1">
+                <p>
+                    O undercut é um corte moderno que combina estilo e personalidade. Sua principal característica é o contraste entre as laterais 
+                    e a parte de trás mais baixas ou raspadas, enquanto o topo do cabelo permanece mais comprido. Esse corte pode ser finalizado de
+                    diferentes maneiras, como penteado para trás, com textura ou até em estilo moicano. Além disso, sua versatilidade faz com que 
+                    combine com diversos tipos e texturas de cabelo.
+                </p>
+            </div>
+            <div>
+                <h3>Corte Militar</h3>
+                <img src="../imagens/militar.jpeg" alt="" class="img1">
+                <p>
+                    O corte militar é um estilo clássico que nunca sai de moda, perfeito para quem procura praticidade e um visual sempre alinhado. 
+                    Ele possui laterais bem baixas ou raspadas e o topo curto, garantindo facilidade na manutenção do dia a dia. O comprimento pode 
+                    variar de acordo com a preferência de cada pessoa, mantendo sempre a aparência limpa e organizada. Esse corte é uma ótima opção 
+                    para quem prefere um visual mais discreto e tradicional.
+                </p>
+            </div>
+            <div>
+                <h3>Corte Americano</h3>
+                <img src="../imagens/americano.jpeg" alt="" class="img1">
+                <p>
+                    O corte masculino no estilo americano é uma escolha clássica que continua sempre em alta. Ele se destaca pelas laterais mais 
+                    baixas e pelo topo um pouco mais comprido, criando um visual equilibrado, natural e elegante. Esse estilo é ideal para quem 
+                    deseja unir tradição e modernidade no mesmo corte. Além disso, combina muito bem com diferentes tipos de cabelo, incluindo 
+                    lisos e crespos.
+                </p>
+            </div>
+            <div>
+                <h3>Moicano</h3>
+                <img src="../imagens/moicano.jpeg" alt="" class="img1">
+                <p>
+                    O moicano é uma ótima opção para quem gosta de um visual mais marcante e cheio de atitude. Esse corte se caracteriza pelo 
+                    maior volume no centro da cabeça, enquanto as laterais ficam raspadas ou bem baixas. As versões modernas do moicano podem ir 
+                    desde estilos mais discretos até os mais ousados, com fios desfiados, texturizados ou até com cores diferentes, trazendo ainda 
+                    mais personalidade ao visual.
+                </p>
+            </div>
+            <div>
+                <h3>Estilo V</h3>
+                <img src="../imagens/vstyle.jpeg" alt="" class="img1">
+                <p>
+                    O corte masculino em estilo V tem se tornado cada vez mais popular por seu visual moderno e diferente. Ele se destaca pelo 
+                    desenho geométrico na parte da nuca, formando um “V” bem definido. Esse estilo é indicado para quem busca um corte mais marcante 
+                    e pode ser combinado com outros tipos, como o fade ou o undercut. Além de trazer mais personalidade ao visual, o acabamento em 
+                    V deixa o corte mais limpo e bem estruturado, funcionando bem em cabelos curtos e médios, lisos ou cacheados.
+                </p>
+            </div>
+            <div>
+                <h3>Tapper</h3>
+                <img src="../imagens/taper.jpeg" alt="" class="img1">
+                <p>
+                    O taper é um corte que lembra o fade, mas de forma mais suave e discreta. Nele, o cabelo vai diminuindo gradualmente do 
+                    comprimento nas laterais, especialmente nas têmporas até a nuca, sem aquela transição mais marcada típica do fade.
+                    Esse estilo é conhecido por sua elegância e simplicidade, sendo uma ótima escolha para quem prefere um visual mais clássico e 
+                    versátil. Ele funciona bem tanto em ambientes profissionais quanto no dia a dia, combinando facilmente com diferentes estilos.
+                </p>
+            </div>
+            <div>
+                <h3>Caeser</h3>
+                <img src="../imagens/caeser.jpeg" alt="" class="img1">
+                <p>
+                    O corte Caesar é um estilo curto e com textura que vem se destacando bastante nos últimos tempos. Ele se caracteriza pela franja 
+                    curta e pelo cabelo levemente direcionado para a frente.
+                    Conhecido pela praticidade, é uma ótima opção para quem busca um visual limpo e fácil de manter no dia a dia. Além disso, combina 
+                    com diferentes tipos de cabelo e pode ajudar a disfarçar entradas ou sinais de calvície.
+                    Para um visual mais atual, o Caesar pode ser combinado com um fade nas laterais, trazendo um toque moderno ao corte, seja em cabelos 
+                    lisos ou cacheados.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="CB">
+        <h2>Corte de Barba</h2>
+        <div>
+
         </div>
     </div>
 
