@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Luís</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rye&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rye&display=swap"
+        rel="stylesheet">
 
     <style>
         :root {
@@ -29,12 +33,16 @@
             --cafe-au-lait: #A57A5A;
         }
 
-        .logo {
-            /*display: flex;
-            justify-content: end;*/
-            height: 5rem;
-            padding-right: 0;
-            margin-left: 6.375rem;
+        body {
+            background-image: url(../imagens/sobre.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ff {
+            font-size: 1.3rem;
+            font-family: 'Rye';
         }
 
         nav {
@@ -46,9 +54,56 @@
             background-color: var(--dark-redish-brown);
         }
 
-        .ff {
-            font-size: 1.3rem;
-            font-family: 'Rye';
+        .d1 {
+            margin: 2rem auto 3rem auto;
+            background-color: var(--light-french-beige);
+            max-width: 960px;
+            width: 95%;
+            padding: 2rem;
+            border-radius: 13px;
+        }
+
+        h1 {
+            font-family: 'Poppins';
+            color: var(--dark-redish-brown);
+            font-weight: 600;
+        }
+
+        h2 {
+            font-family: 'Oswald';
+            color: var(--dark-redish-brown);
+        }
+
+        .card-quote {
+            font-family: 'Open Sans';
+            color: var(--cofee-brown);
+            font-style: italic;
+        }
+
+        .section-title {
+            margin: 2rem 0 1rem;
+        }
+
+        .list-group {
+            padding: 0;
+        }
+
+        .list-group-item {
+            background-color: var(--fadded-orange);
+            border: 1px solid rgba(1, 1, 1, 0.03);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .list-group-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .list-group-item img {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
         }
 
         .d3 {
@@ -56,24 +111,25 @@
             padding: 1rem;
         }
 
-        .d2 {
-            height: 34rem;
-        }
-
         .d4 {
             margin-top: 1rem;
         }
 
-        .d6 {
+        .info-link,
+        .info-text {
             color: var(--fadded-orange);
+            text-decoration: none;
         }
 
-        .d6 a {
-            text-decoration: none;
-            color: var(--fadded-orange);
+        @media(max-width:576px) {
+            .list-group-item.d-flex img {
+                width: 44px;
+                height: 44px;
+            }
         }
     </style>
 </head>
+
 <body>
     <nav id="início" class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -86,43 +142,324 @@
                 </div>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-label="Abrir menu" title="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="menu">
-              <ul class="navbar-nav align-items-center">
-                <li class="nav-item fs-5"><a class="nav-link" href="../index.html">Início</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./Sobre.html">Sobre</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./Serviços.html">Serviços</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./Portifólio.html">Portifólio</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="#">Depoimentos</a></li>
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item fs-5"><a class="nav-link" href="../index.html">Início</a></li>
+                    <li class="nav-item fs-5"><a class="nav-link" href="./Sobre.html">Sobre</a></li>
+                    <li class="nav-item fs-5"><a class="nav-link" href="./Serviços.html">Serviços</a></li>
+                    <li class="nav-item fs-5"><a class="nav-link" href="./Portifólio.html">Portifólio</a></li>
+                    <li class="nav-item fs-5"><a class="nav-link" href="#">Depoimentos</a></li>
 
-                <li class="nav-item ms-3">
-                  <a class="btn btn-dark rounded px-4 fs-5" href="./Agendamento.html">Agendar</a>
-                </li>
-              </ul>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-dark rounded px-4 fs-5" href="./Agendamento.html">Agendar</a>
+                    </li>
+                </ul>
             </div>
 
         </div>
     </nav>
 
-    <div>
-        <a href="#início">Voltar ao Início</a>
+
+    <div class="d1">
+        <h1 class="mb-4">Depoimentos dos Clientes</h1>
+
+        <section>
+            <h2 class="h4 section-title">Clientes Tradicionais e Antigos (Fidelidade e Nostalgia)</h2>
+            <div class="list-group">
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Carlos Augusto — ★★★★★</strong>
+                        <p class="card-quote">"Frequento há mais de 10 anos. O Seu Luís não vende apenas um corte de
+                            cabelo, vende uma boa prosa e tradição. Não troco por nada."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Seu Antenor — ★★★★★</strong>
+                        <p class="card-quote">"Corte clássico na tesoura como nenhum garoto de hoje sabe fazer. Ambiente
+                            respeitoso e café sempre quente."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Mauro Silva — ★★★★☆</strong>
+                        <p class="card-quote">"Sou cliente das antigas. O serviço continua impecável, só acho que nos
+                            dias de sábado a espera fica um pouco longa, mas vale a pena."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Benedito Souza — ★★★★★</strong>
+                        <p class="card-quote">"Trago meu neto hoje em dia. É a história do bairro resumida em uma
+                            barbearia. Atendimento nota mil."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Geraldo Pontes — ★★★★★</strong>
+                        <p class="card-quote">"Cabelo e barba impecáveis. O Seu Luís mantém a essência das barbearias de
+                            verdade. Preço justo e muita qualidade."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="h4 section-title">Clientes Jovens e Modernos (Foco em Tendências)</h2>
+            <div class="list-group">
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Enzo Gabriel — ★★★★★</strong>
+                        <p class="card-quote">"O corte <em>degrade</em> navalhado ficou insano! Os barbeiros novos
+                            mandam muito bem nas tendências. Curti demais o ambiente."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Matheus R. — ★★★★☆</strong>
+                        <p class="card-quote">"Fiz o <em>risquinho</em> na sobrancelha e o corte americano. Ficou top.
+                            Demorou um pouquinho para começar, mas o resultado compensou."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Thiago "TK" — ★★★★★</strong>
+                        <p class="card-quote">"Espaço muito massa. Dá para trocar uma ideia, tomar uma gelada e sair com
+                            o visual alinhado. Atendimento jovem e dinâmico."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Lucas Andrade — ★★★★☆</strong>
+                        <p class="card-quote">"Mandam muito bem no <em>taper fade</em>. Só achei a playlist de música um
+                            pouco alta no dia, mas o corte foi perfeito."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Kevin Souza — ★★★★★</strong>
+                        <p class="card-quote">"Melhor <em>high fade</em> da região. Os caras manjam muito de cabelo
+                            afro. Virei cliente fixo com certeza."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="h4 section-title">Foco em Barba e Toalha Quente (Experiência e Relaxamento)</h2>
+            <div class="list-group">
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Rodrigo Lima — ★★★★★</strong>
+                        <p class="card-quote">"Fazer a barba com a toalha quente lá é uma terapia. A massagem facial no
+                            final fecha com chave de ouro."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Alexandre Frota — ★★★★★</strong>
+                        <p class="card-quote">"Minha barba é muito dura e sempre encravava. Depois que comecei a fazer
+                            aqui, com os produtos deles, minha pele mudou. Recomendo."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Bruno Mendes — ★★★★☆</strong>
+                        <p class="card-quote">"O design da barba ficou excelente, bem simétrico. O óleo que usaram no
+                            final tem um cheiro muito bom."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Marcelo Vieira — ★★★★★</strong>
+                        <p class="card-quote">"Alinhamento de barba perfeito. O barbeiro foi extremamente meticuloso.
+                            Atendimento padrão premium."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Gustavo Henrique — ★★★★☆</strong>
+                        <p class="card-quote">"Cortei e fiz a barba. O serviço é excelente, só acho que o agendamento
+                            pelo site poderia ser um pouco mais intuitivo."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="h4 section-title">Novos Clientes e Primeiras Impressões</h2>
+            <div class="list-group">
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Ricardo Dias — ★★★★★</strong>
+                        <p class="card-quote">"Primeira vez na barbearia e me senti em casa. Atendimento acolhedor e o
+                            corte ficou exatamente como eu pedi."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Felipe Albuquerque — ★★★★☆</strong>
+                        <p class="card-quote">"Mudei para o bairro há pouco tempo e resolvi testar. Gostei bastante da
+                            limpeza e da organização do local."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Júlio César — ★★★★★</strong>
+                        <p class="card-quote">"Fui por indicação de um amigo e surpreendeu. Desde a recepção até a
+                            finalização do corte, tudo perfeito."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Daniel Nunes — ★★★☆☆</strong>
+                        <p class="card-quote">"O corte ficou bom, mas achei o valor um pouco acima da média das outras
+                            barbearias da rua."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Arthur Antunes — ★★★★★</strong>
+                        <p class="card-quote">"Estava passando em frente, resolvi entrar e o atendimento foi super
+                            rápido. Virei cliente de primeira."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="h4 section-title">Exigentes, Detalhistas ou Críticas Construtivas</h2>
+            <div class="list-group">
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Marcos Vinícius — ★★★☆☆</strong>
+                        <p class="card-quote">"O barbeiro cortou bem, mas tirou mais no topo do que eu tinha pedido. O
+                            ambiente é legal, mas faltou mais atenção ao meu pedido."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Roberto Sales — ★★★★☆</strong>
+                        <p class="card-quote">"Profissionais muito qualificados. Só dou 4 estrelas porque tive que
+                            esperar 20 minutos mesmo com horário agendado."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Adelson Cruz — ★★★☆☆</strong>
+                        <p class="card-quote">"O serviço é bom, mas o estacionamento na região é muito difícil. Quem vai
+                            de carro sofre um pouco."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Wagner Prado — ★★★★☆</strong>
+                        <p class="card-quote">"Corte excelente, mas o ar condicionado estava forte demais no dia. Fora
+                            isso, os profissionais são muito técnicos."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Leonardo Froes — ★★★☆☆</strong>
+                        <p class="card-quote">"Achei a finalização com a pomada um pouco pesada pro meu tipo de cabelo.
+                            O corte em si ficou ok, mediano."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="h4 section-title">Pais, Filhos e Praticidade</h2>
+            <div class="list-group mb-5">
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Fabrício Costa — ★★★★★</strong>
+                        <p class="card-quote">"Levei meu filho de 4 anos e a paciência do barbeiro com ele foi
+                            espetacular. Ganharam um cliente e um fã."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Diego Torres — ★★★★★</strong>
+                        <p class="card-quote">"Ambiente excelente para pai e filho. Cortamos juntos no sábado e a
+                            experiência foi nota dez."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Renan Justo — ★★★★☆</strong>
+                        <p class="card-quote">"Gosto da praticidade do aplicativo deles para marcar hora. Facilita muito
+                            a vida de quem tem a rotina corrida."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Samuel Braga — ★★★★★</strong>
+                        <p class="card-quote">"Preço justo pelo nível do serviço. Não é daquelas barbearias
+                            <em>gourmet</em> que cobram uma fortuna por bobagem. É serviço de qualidade."</p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-start">
+                    <img src="../imagens/foto_perfil.png" alt="foto_perfil" width="56" class="me-3 rounded-circle">
+                    <div>
+                        <strong>Cláudio Roberto — ★★★★★</strong>
+                        <p class="card-quote">"Penteado e finalização impecáveis para o meu casamento. Me atenderam
+                            super bem no meu 'dia do noivo'."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <div class="d3 container-fluid">
         <div class="d4 d-flex flex-row row-gap-1 justify-content-center">
-            <div class="d6 text-center">
+            <div class="text-center">
                 <h4>Informações Rápidas</h4>
-                <a href="./Sobre.html">Sobre</a>
-                <p>E-mail: zeluisjoao@gmail.com.br</p>  
-                <p>Número: +55 11 97456-8076</p>
-                <a href="./pages/Sobre.html">Localização</a>
+                <a href="./Sobre.html" class="info-link">Sobre</a>
+                <p class="info-text">E-mail: zeluisjoao@gmail.com.br</p>
+                <p class="info-text">Número: +55 11 97456-8076</p>
+                <a href="./Sobre.html" class="info-link">Localização</a>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
