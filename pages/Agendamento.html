@@ -32,6 +32,9 @@
 
         body {
             background-image: url(../imagens/vintage-frame-salon-tools-wooden-table-jobs-career-concept_53876-143259.avif);
+            background-repeat: no-repeat;
+            background-size: cover;      
+            background-position: center;
         }
 
         .logo {
@@ -52,37 +55,61 @@
         }
         
        form {
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-left: 29.5%;
         border: 1px solid var(--dark-gray);
-        width: 40rem;
-        height: 30rem;
+        max-width: 40rem;
+        max-height: 50rem;
         background-color: var(--white);
        }
 
        .p1 {
         margin-top: 1rem;
+        color: var(--burnt-orange);
+        font-family: 'Rye';
+       }
+
+       .pp1 {
+        font-family: 'Oswald';
+        color: var(--burnt-orange);
+        margin-top: 4px;
+        margin-bottom: 4px;
        }
 
        .p3 {
         margin-bottom: 1rem;
         font-style: italic;
-        color: var(--light-gray);
+        color: var(--burnt-orange);
         font-weight: 600;
+        font-family: 'Open Sans';
        }
 
        .input {
         width: 32rem;
+        background-color: var(--cofee-brown);
+        color: var(--burnt-orange);
+        border: 1px solid var(--light-french-beige);
        }
 
        .input2 {
         width: 5rem;
         padding-left: 14px;
         margin-bottom: 1rem;
+        background-color: var(--cofee-brown);
+        color: var(--burnt-orange);
+        border: 1px solid var(--light-french-beige);
        }
 
        .input3 {
-        width: 5rem;
+        margin-bottom: 1rem;
+        background-color: var(--cafe-au-lait);
+        border: 1px transparent;
+        border-radius: 10px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.3rem;
        }
 
        .ff {
@@ -110,6 +137,13 @@
         .d6 a {
             text-decoration: none;
             color: var(--fadded-orange);
+        }
+
+        .ff1 {
+            margin-bottom: 1rem;
+            border: 1px transparent;
+            border-radius: 10px;
+            background-color: var(--cofee-brown);
         }
     </style>
 </head>
@@ -146,16 +180,17 @@
         </div>
     </nav>
 
-    <form name="agendaMento" onsubmit="validarFormulario(event)" class="d-flex align-items-center justify-content center flex-column row-gap-1">
-        <p class="p1">Digite seu nome completo</p>
+    <form name="agendaMento" id="click" onsubmit="validarFormulario(event)" class="d-flex align-items-center justify-content-center flex-column row-gap-1 ff1">
+        <h1 class="p1">Agendamento</h1>
+        <p class="pp1">Digite seu nome completo</p>
         <input type="text" name="nome" placeholder="Teresa de Maria" class="input">
-        <p>Digite seu telefone</p>
+        <p class="pp1">Digite seu telefone</p>
         <input type="tel" name="telefone" placeholder="(99) 99999-9999" class="input">
-        <p>Serviço</p>
+        <p class="pp1">Serviço</p>
         <input type="text" name="serviço" placeholder="Pintar o Cabelo" class="input">
-        <p>Data</p>
+        <p class="pp1">Data</p>
         <input type="date" name="data" placeholder="99/99/9999" class="input">
-        <p>Horário Preferido do cliente</p>
+        <p class="pp1">Horário Preferido do cliente</p>
         <div class="d-flex flex-row column-gap-3 align-items-center">            
             <input type="time" name="hora" class="input2">
             <p class="p3">*Horário de funcionamento: 9-12, 13-18</p>
