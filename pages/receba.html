@@ -147,8 +147,9 @@
             color: var(--burnt-orange);
         }
 
-        .chegou h2 {
-            font-family: 'Oswald';
+        .chegou h1 {
+            font-family: 'Rye';
+            font-weight: 600;
         }
 
         .chegou p {
@@ -179,10 +180,6 @@
                 <li class="nav-item fs-5"><a class="nav-link" href="./Serviços.html">Serviços</a></li>
                 <li class="nav-item fs-5"><a class="nav-link" href="./Portifólio.html">Portifólio</a></li>
                 <li class="nav-item fs-5"><a class="nav-link" href="./Depoimentos.html">Depoimentos</a></li>
-
-                <li class="nav-item ms-3">
-                  <a class="btn btn-dark rounded px-4 fs-5" href="./Agendamento.html">Agendar</a>
-                </li>
               </ul>
             </div>
 
@@ -197,12 +194,12 @@
         document.getElementById("dados").innerHTML = `
             <div class="container">
                 <div class="chegou d-flex flex-column row-gap-1 align-items-center">
-                    <p class="item"><strong>Nome:</strong> ${dados.nome}</p>
-                    <p class="item"><strong>Telefone:</strong> ${dados.telefone}</p>
-                    <p class="item"><strong>Serviço:</strong> ${dados.servico}</p>
-                    <p class="item"><strong>Data:</strong> ${dados.data}</p>
-                    <p class="item"><strong>Horário:</strong> ${dados.hora}</p>
-                    <h2> Enviado com sucesso </h2>
+                    <h1> Seu Agendamento </h1>
+                    <p><strong>Nome:</strong> ${dados.nome}</p>
+                    <p><strong>Telefone:</strong> ${dados.telefone}</p>
+                    <p><strong>Serviço:</strong> ${dados.servico}</p>
+                    <p><strong>Data:</strong> ${dados.data}</p>
+                    <p><strong>Horário:</strong> ${dados.hora}</p>
                 </div>
             </div>
         `;
