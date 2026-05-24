@@ -30,7 +30,7 @@
         }
 
         body {
-            background-image: url(./imagens/ChatGPT\ Image\ 4\ de\ mai.\ de\ 2026\,\ 15_18_48.png);
+            background-image: url(../imagens/ChatGPT\ Image\ 4\ de\ mai.\ de\ 2026\,\ 15_18_48.png);
             background-repeat: no-repeat;
             background-size: cover;      
             background-position: center;
@@ -135,6 +135,25 @@
             text-decoration: none;
             color: var(--fadded-orange);
         }
+
+        .chegou {
+            background-color: var(--dark-redish-brown);
+            border: 1px transparent;
+            border-radius: 10px;
+            width: 50%;
+            margin-left: 26%;
+            margin-top: 3%;
+            margin-bottom: 10%;
+            color: var(--burnt-orange);
+        }
+
+        .chegou h2 {
+            font-family: 'Oswald';
+        }
+
+        .chegou p {
+            font-family: 'Open Sans';
+        }
     </style>
 </head>
 <body>
@@ -142,7 +161,7 @@
         <div class="container">
 
             <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                <img src="./imagens/imagem_convertida-removebg-preview.png" alt="logo" width="80" class="me-2">
+                <img src="../imagens/imagem_convertida-removebg-preview.png" alt="logo" width="80" class="me-2">
                 <div>
                     <strong class="ff">Barbearia do Seu Luís</strong><br>
                     <small>20 anos de tradição</small>
@@ -155,14 +174,14 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="menu">
               <ul class="navbar-nav align-items-center">
-                <li class="nav-item fs-5"><a class="nav-link" href="#">Início</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Sobre.html">Sobre</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Serviços.html">Serviços</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Portifólio.html">Portifólio</a></li>
-                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Depoimentos.html">Depoimentos</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="../index.html">Início</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./Sobre.html">Sobre</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./Serviços.html">Serviços</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./Portifólio.html">Portifólio</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./Depoimentos.html">Depoimentos</a></li>
 
                 <li class="nav-item ms-3">
-                  <a class="btn btn-dark rounded px-4 fs-5" href="./pages/Agendamento.html">Agendar</a>
+                  <a class="btn btn-dark rounded px-4 fs-5" href="./Agendamento.html">Agendar</a>
                 </li>
               </ul>
             </div>
@@ -170,9 +189,24 @@
         </div>
     </nav>
 
-    <div id="aqui">
+    <div id="dados"></div>
 
-    </div>
+    <script>
+        const dados = JSON.parse(localStorage.getItem("agendamento"));
+
+        document.getElementById("dados").innerHTML = `
+            <div class="container">
+                <div class="chegou d-flex flex-column row-gap-1 align-items-center">
+                    <p class="item"><strong>Nome:</strong> ${dados.nome}</p>
+                    <p class="item"><strong>Telefone:</strong> ${dados.telefone}</p>
+                    <p class="item"><strong>Serviço:</strong> ${dados.servico}</p>
+                    <p class="item"><strong>Data:</strong> ${dados.data}</p>
+                    <p class="item"><strong>Horário:</strong> ${dados.hora}</p>
+                    <h2> Enviado com sucesso </h2>
+                </div>
+            </div>
+        `;
+    </script>
 
     <div class="d3 container-fluid">
         <div class="d4 d-flex flex-row row-gap-1 justify-content-center">
