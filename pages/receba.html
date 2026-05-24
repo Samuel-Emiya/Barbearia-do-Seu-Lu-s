@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Luís</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rye&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --lightest-gray: #F9FAFB;
+            --dark-gray: #4A5565;
+            --lighter-brown: #8D5740;
+            --burnt-orange: #D98943;
+            --cofee-brown: #40200E;
+            --nut-brown: #73462C;
+            --rust-brown: #A66B49;
+            --dark-redish-brown: #260F06;
+            --saddle-brown: #8B4411;
+            --santa-fe: #AE6E4E;
+            --fadded-orange: #CC9767;
+            --beige: #F5F5DD;
+            --light-french-beige: #C7AD7F;
+            --cafe-au-lait: #A57A5A;
+        }
+
+        body {
+            background-image: url(./imagens/ChatGPT\ Image\ 4\ de\ mai.\ de\ 2026\,\ 15_18_48.png);
+            background-repeat: no-repeat;
+            background-size: cover;      
+            background-position: center;
+        }
+
+        .logo {
+            /*display: flex;
+            justify-content: end;*/
+            height: 5rem;
+            padding-right: 0;
+            margin-left: 6.375rem;
+        }
+
+        nav {
+            border-bottom: 1px solid black;
+            background-color: var(--light-french-beige);
+        }
+        
+        .t1 {
+            font-size: 60px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            text-shadow: -1px 5px 3px var(--nut-brown);
+            color: var(--burnt-orange);
+        }
+
+        .p1 {
+            font-size: 14px;
+            color: var(--white);
+            background-color: var(--nut-brown);
+            border: 0.5rem solid var(--nut-brown);
+            border-radius: 2rem;
+            width: 10rem;
+            text-align: center;
+        }
+
+        .p2 {
+            font-size: 20px;
+            color: var(--santa-fe);
+        }
+
+        .a1 {
+            text-decoration: none;
+            font-size: 18px;
+            color: var(--white);
+            background-color: var(--nut-brown);
+            border: 1rem solid var(--nut-brown);
+            border-radius: 0.75rem;
+        }
+
+        .a2 {          
+            text-decoration: none;
+            font-size: 18px;
+            color: var(--burnt-orange);
+            border: 1rem solid var(--dark-redish-brown);
+            border-radius: 0.75rem;
+            background-color: var(--dark-redish-brown);
+        }
+
+        .i1 {
+            margin-top: 1.5rem;
+            margin-left: 14rem;
+            width: 40rem;
+            height: 27rem;
+            border-radius: 5px;
+        }
+
+        .ff {
+            font-size: 1.3rem;
+            font-family: 'Rye';
+        }
+
+        .btn {
+            background-color: var(--dark-redish-brown);
+        }
+
+        .d1 {
+            background-color: var(--dark-redish-brown);
+            padding: 1rem;
+            border: 1px transparent var(--dark-redish-brown);
+            border-radius: 12px;
+        }
+
+        .d3 {
+            background-color: var(--dark-redish-brown);
+            padding: 1rem;
+        }
+
+        .d2 {
+            height: 34rem;
+        }
+
+        .d4 {
+            margin-top: 1rem;
+        }
+
+        .d6 {
+            color: var(--fadded-orange);
+        }
+
+        .d6 a {
+            text-decoration: none;
+            color: var(--fadded-orange);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="./imagens/imagem_convertida-removebg-preview.png" alt="logo" width="80" class="me-2">
+                <div>
+                    <strong class="ff">Barbearia do Seu Luís</strong><br>
+                    <small>20 anos de tradição</small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item fs-5"><a class="nav-link" href="#">Início</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Sobre.html">Sobre</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Serviços.html">Serviços</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Portifólio.html">Portifólio</a></li>
+                <li class="nav-item fs-5"><a class="nav-link" href="./pages/Depoimentos.html">Depoimentos</a></li>
+
+                <li class="nav-item ms-3">
+                  <a class="btn btn-dark rounded px-4 fs-5" href="./pages/Agendamento.html">Agendar</a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="aqui">
+
+    </div>
+
+    <div class="d3 container-fluid">
+        <div class="d4 d-flex flex-row row-gap-1 justify-content-center">
+            <div class="d6 text-center">
+                <h4>Informações Rápidas</h4>
+                <a href="./pages/Sobre.html">Sobre</a>
+                <p>E-mail: zeluisjoao@gmail.com.br</p>  
+                <p>Número: +55 11 97456-8076</p>
+                <a href="./pages/Sobre.html">Localização</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
